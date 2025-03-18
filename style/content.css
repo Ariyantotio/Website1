@@ -1,0 +1,84 @@
+/*warna background*/
+#content-page {
+    width: auto;
+    background-color: white; /* Warna latar belakang */
+    gap: 50px;
+}
+/* Konten Tengah */
+.content-i {
+    position:relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 10%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color: black;
+    z-index: 2;
+}
+
+/* Judul */
+.content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Paragraf */
+.content p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+/*content section*/
+.container {
+    display: flex;
+    justify-content: space-between; /* Memberikan jarak antar elemen */
+    align-items: stretch; /* Pastikan semua elemen sejajar */
+    gap: 20px; /* Beri jarak antar kartu */
+    padding: 20px;
+}
+
+.card {
+    flex: 1; /* Semua kartu memiliki ukuran yang sama */
+    max-width: 250px; /* Atur lebar maksimal */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .content-i {
+        display: block;
+        margin-top: 40%;
+        text-align:center;
+        color: black;
+    }
+    
+    /* Judul */
+    .content h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    
+    /* Paragraf */
+    .content p {
+        font-size: 1.2em;
+        margin: 10px 0 20px;
+    }
+    /*content section*/
+    .container {
+        display: block;
+        margin-bottom: 20px;
+        align-items: center; /* Pastikan semua elemen sejajar */
+        text-align: center;
+        align-content: center;
+    }
+    
+    .card {
+        flex: 1; /* Semua kartu memiliki ukuran yang sama */
+        max-width: 250px; /* Atur lebar maksimal */
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+}

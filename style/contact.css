@@ -1,0 +1,94 @@
+/* Styling untuk keseluruhan container */
+.contact-container {
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Jarak antara teks dan form */
+    max-width: 100%;
+    margin: auto;
+    padding: 100px;
+    background-color: #276ef1; /* Warna biru seperti pada gambar */
+    color: white;
+}
+/*styling untuk form*/
+.contact-form {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+/* Styling input & textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* Label */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+/* Tombol kirim */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #276ef1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1a50c4;
+}
+/* Responsif */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 20px;
+        background-color: #276ef1; /* Warna biru seperti pada gambar */
+        color: white;
+    }
+    .contact-form {
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        max-width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    input, textarea {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    /* Label */
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: auto;
+    }
+    /* Tombol kirim */
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #276ef1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+}
