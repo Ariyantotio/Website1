@@ -11,7 +11,7 @@
 .navbar {
     width: 90%; /* Full width */
     height: 30px; /* Tinggi navbar */
-    background-color: rgb(255, 255, 255, 0.2); /* Warna background transparan */
+    background-color: rgb(255, 255, 255, 0.0); /* Warna background transparan */
     display: flex;
     justify-content: space-between; /* Menyusun logo dan menu */
     align-items: center;
@@ -79,60 +79,40 @@
 }
 /* Responsif */
 @media screen and (max-width: 768px){
+    .Body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        min-height: 450vh;/*buat halaman lebih panjang*/
+    }
+    
     /* Navbar */
-.navbar {
-    width: 65%; /* Full width */
-    height: 30px; /* Tinggi navbar */
-    background-color: rgb(255, 255, 255, 0.2); /* Warna background transparan */
-    display: flex;
-    justify-content: center; /* Menyusun logo dan menu */
-    align-items: center;
-    padding: 10px 80px;
-    position: fixed; /* Tetap di atas saat discroll */
-    font-family: Arial, sans-serif;
-}
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #1a1a1a;
-}
-.logo i {
-    font-size: 24px;
-    color: blue;
-    margin-right: 8px;
-}
-/*style dropdown*/
-.dropbtn {
-    background-color:white;
-    color:black;
-    font-size: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-}
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-}
+    .navbar {
+        width: 50%; /* Full width */
+        height: 30px; /* Tinggi navbar */
+        background-color: rgb(255, 255, 255, 0.0); /* Warna background transparan */
+        display: flex;
+        justify-content: space-between; /* Menyusun logo dan menu */
+        align-items: center;
+        padding: 10px 40px;
+        position: fixed; /* Tetap di atas saat discroll */
+        top: 0;
+        left: 0;
+        z-index: 500;
+        font-family: Arial, sans-serif;
+    }
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        font-weight: bold;
+        color: #1a1a1a;
+    }
+    .logo i {
+        font-size: 24px;
+        color: blue;
+        margin-right: 4px;
+    }
 }
