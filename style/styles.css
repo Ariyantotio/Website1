@@ -89,7 +89,7 @@
     
     /* Navbar */
     .navbar {
-        width: 50%; /* Full width */
+        width: auto; /* Full width */
         height: 30px; /* Tinggi navbar */
         background-color: rgb(255, 255, 255, 0.0); /* Warna background transparan */
         display: flex;
