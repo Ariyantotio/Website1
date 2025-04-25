@@ -31,9 +31,10 @@
     color: #1a1a1a;
 }
 .logo i {
-    font-size: 24px;
+    font-size: 20px;
     color: blue;
     margin-right: 8px;
+    gap: 15px;
 }
 /*style dropdown*/
 .dropbtn {
