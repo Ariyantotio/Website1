@@ -1,18 +1,20 @@
 /*warna background*/
 #content-page {
-    width: auto;
-    background-color: white; /* Warna latar belakang */
+    min-width: 100%;
+    background-color:black; /* Warna latar belakang */
     gap: 50px;
 }
 /* Konten Tengah */
 .content-i {
     position:relative;
+    background-color: black;
     top: 50%;
     left: 50%;
-    margin-top: 10%;
+    margin-top: 30px;
+    margin-bottom: 80px;
     transform: translate(-50%, -50%);
     text-align:center;
-    color: black;
+    color: white;
     z-index: 2;
 }
 
@@ -81,6 +83,7 @@
         justify-content: space-between; /* Memberikan jarak antar elemen */
         align-items:stretch; /* Pastikan semua elemen sejajar */
         gap: 20px; /* Beri jarak antar kartu */
+        margin: auto;
         padding: 20px;
         margin-bottom: 40px;
     }
